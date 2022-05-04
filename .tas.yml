@@ -1,5 +1,6 @@
 ---
 framework: mocha
+parallelism: 2
 preRun:
   command:
     - npm i
