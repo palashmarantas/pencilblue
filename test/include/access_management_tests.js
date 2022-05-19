@@ -11,7 +11,7 @@ describe('SecurityService', function() {
     var sessions = null;
     before('Initialize the Environment with the default configuration', function(next) {
 
-        //travis gets slow so we bump the timeout just a little here to get around the BS
+        //travis gets slow so we bump the timeout just a little here to get around the BSS
         this.timeout(10000);
         var start = (new Date()).getTime();
 
@@ -157,7 +157,7 @@ describe('SecurityService', function() {
             SecurityService.generatePassword(0).should.have.length(8);
             SecurityService.generatePassword(7).should.have.length(8);
             SecurityService.generatePassword(20).should.have.length(20);
-        });    
+        });
 
         it('should generate 25 different passwords that are all unique', function() {
             var passwords = [];

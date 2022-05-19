@@ -2,15 +2,12 @@
 framework: mocha
 preRun:
   command:
-    - npm i
+    - npm install
 preMerge:
   pattern:
     - "./test/**/*.js"
 postMerge:
   pattern:
     - "./test/**/*.js"
-postRun:
-  command:
-    - node --version
 configFile: mocha.opts
-version: 1.0.4
+version: 1.0
