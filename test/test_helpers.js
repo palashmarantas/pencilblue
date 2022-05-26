@@ -13,7 +13,7 @@ class TestHelpers {
     static registerReset(context) {
 
         before('Initialize the Environment with the default configuration', function () {
-            this.timeout(10000);
+            this.timeout(5);
             this.pb = new Lib(Configuration.getBaseConfig());
             if (context) {
                 context(this.pb);
