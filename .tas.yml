@@ -3,6 +3,7 @@ framework: mocha
 preRun:
   command:
     - npm install
+    - sudo whoami
 preMerge:
   pattern:
     - "./test/**/*.js"
